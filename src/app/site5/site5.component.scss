@@ -1,0 +1,77 @@
+.screenBack {
+    background-color: #f5f6f8;
+}
+.background {
+    background-color: #ffffff;
+}
+.IconBackground {
+    background-color: lightblue;
+    width:60px;
+    height:60px;
+}
+.icon{
+    display:block;
+    margin:auto;
+}
+
+.testIcon {
+    width: 25px;
+    padding: 1px;
+    padding-right: 3px;
+}
+.logo {
+    width: 60px;
+}
+.repCard {
+    border-radius: 3% !important;
+}
+.btn-primary{
+    background-color:black !important;
+    border: 1px black;
+    border-radius: 15px;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 10px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+  .pagination {
+    display: inline-block;
+  }
+  
+  .pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: 1px solid #ddd;
+  }
+  
+  .pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+  }
+  
+  .pagination a:hover:not(.active) {background-color: #ddd;}
+  
+  .pagination a:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  
+  .pagination a:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }

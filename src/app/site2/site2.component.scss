@@ -1,0 +1,67 @@
+.btn-orange {
+    background-color: var(--orange);
+}
+.grey {
+    color: var(--grey);
+}
+.removeRadius {
+    border-radius: 0px !important;
+}
+.displayPhone {
+    display: none;
+}
+.navbar-nav {
+    flex-direction: row !important;
+}
+.desktop {
+    width: 400px;
+    .forDeskptop {
+        width: 350px;
+    }
+}
+.width{
+    width:100px;
+}
+.shop{
+    font-size:40px;
+}
+
+.recCard {
+    background-color:var(--white1);
+    .imageSize {
+        height: 100px;
+    }
+    .imageSizeMed {
+        height: 150px;
+        object-fit: contain;
+        width: 100%;
+        background-color: var(--white2);
+    }
+}
+.carolIcon{
+    font-size:48px;
+}
+.hover {
+    cursor: pointer;
+    color:var(--orange);
+}
+
+.headerIcon{
+    font-size:20px; 
+    color:var(--grey);}
+
+@media only screen and (max-width: 768px) {
+    .margin {
+        margin-left: 0px !important;
+        padding: 5px;
+    }
+    .displayPhone {
+        display: block;
+    }
+    .displayDesktop {
+        display: none;
+    }
+    .form-inline {
+        flex-flow: nowrap;
+    }
+}

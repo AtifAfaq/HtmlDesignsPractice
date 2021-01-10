@@ -1,0 +1,68 @@
+<nav class="navbar navbar-expand-md navbar-light bg-faded">
+  <a class="navbar-brand brand mr-2 displayPhone"><img src="assets/site2/logo.png" alt="Logo" class="width"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+    <a class="navbar-brand brand mr-2 displayDesktop"><img src="assets/site2/logo.png" alt="Logo"
+      class="width"></a>
+    <!-- links -->
+    <form class="form-inline m-1 desktop margin">
+      <input class="form-control removeRadius forDeskptop" type="text" placeholder="Search">
+      <button class="btn btn-orange removeRadius" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+    </form>
+
+    <div class="m-1 margin">
+      <i class="fa fa-shopping-cart shop" aria-hidden="true" ></i>
+    </div>
+    <a class="navbar-brand m-1 margin">
+      <img src="assets/site2/app.png" alt="Logo" class="width">
+    </a>
+
+  </div>
+</nav>
+
+
+
+<ul  class="navbar-nav justify-content-center">
+  <li *ngFor="let head of headerArray" class="nav-item m-2 p-2" headerIcon>
+    <i class="{{head.icon}}"></i>
+    {{head.title}}
+  </li>
+</ul>
+
+<div class="container">
+  <div class="row m-5 pointer">
+    <div class="col-md-1">
+      <i class="fa fa-arrow-circle-left carolIcon"  (click)="removePreviousTen()"></i>
+    </div>
+    <div *ngFor="let ic of iconArray | slice:arrayStart:arrayEnd; index as i;" class="col-md-1 text-center"
+      [class.hover]="activeIndex===i" (click)="active(i)">
+      <i class="{{ic.icon}} carolIcon"></i>
+      {{ic.title}}
+    </div>
+    <div class="col-md-1 text-right">
+      <i class="fa fa-arrow-circle-right carolIcon" (click)="pushNextTen()"></i>
+    </div>
+  </div>
+
+  <div class="row">
+    <div *ngFor="let card of cardArray" class="col-md-6 pt-4">
+      <div class="row recCard">
+        <div class="col-md-3 pr-0">
+          <img src={{card.image}} class="imageSize p-3">
+        </div>
+        <div class="col-md-9 pt-3 pl-0">
+          <p>{{card.title}}</p>
+          <p class="mr-1">{{card.subTitle}}<span>{{card.subtitleSay}}</span></p>
+        </div>
+        <div *ngFor="let p of card.product" class="col-md-4 p-3">
+          <img src={{p.img}} class="imageSizeMed">
+          <p class="mt-2">Rs: {{p.price}}</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>

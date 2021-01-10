@@ -1,0 +1,153 @@
+.bannerImg {
+  width: 100%;
+  height: 90vh;
+  object-fit: cover;
+}
+.navbar-button {
+  background-color: var(--radishColor);
+  color: var(--primaryColorWhite);
+}
+.radishText {
+  color: var(--radishColor);
+}
+.whiteText {
+  color: var(--primaryColorWhite) !important;
+  &.text-size {
+    font-size: 25px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+}
+.brownText {
+  color: var(--secondaryColorBrown);
+}
+.text-box {
+  background-color: var(--secondaryColorBrown);
+  height: 200px;
+  padding: 65px;
+}
+.text-box2 {
+  background-color: var(--primaryColorWhite);
+  width: 100%;
+  height: 400px;
+  padding: 75px;
+}
+.box2-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+//////////////////with column structure////////
+.bg-box3 {
+  background-color: var(--tertiaryColorBlue);
+  width: 100%;
+    .borderCard {
+      border: 5px solid white;
+      border-color: var(--primaryColorWhite);
+      height: 300px;
+    }
+    .nav-button {
+      margin-top: 75px !important;
+      border: 1px solid white;
+      background-color: var(--radishColor);
+      color: var(--primaryColorWhite);
+    }
+  
+}
+
+.background {
+  background-color: blanchedalmond;
+  width: 100%;
+  height: 100%;
+  .carousel {
+    .bannerImg {
+      width: 70%;
+      height: 70%;
+      object-fit: cover;
+    }
+    .slideHeading {
+      font-style: italic;
+      font-weight: lighter;
+      color: var(--warning);
+    }
+    .carousel-control-prev {
+      left: 140px;
+    }
+    .carousel-control-next {
+      right: 140px;
+    }
+  }
+}
+
+.text-box4 {
+  background-color: var(--primaryColorWhite);
+  padding: 50px;
+  margin-bottom: 50px;
+  .cardBox {
+  
+    height: 300px;
+    border: 3px solid var(--secondaryColorBrown);
+    &.inlineLook {
+      display: inline-block;
+    }
+    .cardImage {
+      width: 100%;
+      height: 250px;
+    }
+  }
+}
+
+.form {
+  background-color: var(--secondaryColorBrown);
+  width: 100%;
+  padding: 55px;
+  ::placeholder {
+    color: var(--radishColor);
+  }
+  .rightSection {
+    display: inline-block;
+    float: right;
+  }
+  .block {
+    display: block;
+  }
+  .no-space-break {
+    white-space: nowrap;
+  }
+}
+
+.text-box5 {
+  background-color: var(--tertiaryColorBlue);
+  width: 100%;
+  height: 230px;
+  padding: 55px;
+}
+
+@media only screen and (max-width: 768px) {
+  .styling7{
+    margin:0px !important;
+    padding:0px !important;
+  }
+  .borderCard{
+    margin-bottom: 1.5em !important;
+  }
+
+  .text-box4 {
+    padding: 0 !important;
+    margin-bottom: 1em !important;
+  
+  }
+  .bannerImg{
+    width:100% !important;
+  }
+  .carousel-control-prev {
+    left: 0px !important;
+  }
+  .carousel-control-next {
+    right: 0px !important;
+  }
+  .text-box5{
+    padding-left: 55px;
+  }
+}

@@ -1,0 +1,29 @@
+
+  :root {
+    --primaryColorWhite:#ffffff;
+    --secondaryColorBrown:#e1dad3;
+    --tertiaryColorBlue: #49667a;
+    --radishColor:#c68e91;
+    ////////site 2
+    --orange:#f57225;
+    --grey:#707070;
+    --white1:#f7f7f7;
+    --white2:white;
+  }
+
+.container {
+    width: 100% !important;
+    height: 100% !important;
+    padding-left: 0% !important;
+    padding-right: 0% !important;
+
+  }
+  
+  .row {
+    width: 100% !important;
+    margin-left: 0px !important;
+  }
+
+  .pointer{
+    cursor: pointer;
+  }
